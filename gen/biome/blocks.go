@@ -1,4 +1,4 @@
-package gen
+package biome
 
 /**
     ____                               ______          ___
@@ -11,17 +11,11 @@ package gen
 */
 
 import (
-	"DragonGen2/gen/biome"
+	"github.com/df-mc/dragonfly/server/block"
+	"github.com/df-mc/dragonfly/server/world"
 )
 
-// Generator Is the generator struct
-// that will be used to generate.
-type Generator struct {
-}
-
-// NewGenerator Returns a pointer to the generator struct.
-// This can be changed by setting conf.Generator.
-func NewGenerator(seed int64) *Generator {
-	biome.RegisterBiomes(seed)
-	return &Generator{}
-}
+var (
+	grass = world.BlockRuntimeID(block.Grass{})
+	stone = world.BlockRuntimeID(block.Stone{})
+)

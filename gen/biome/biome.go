@@ -11,6 +11,7 @@ package biome
 */
 
 import (
+	goperlin "github.com/aquilax/go-perlin"
 	"github.com/df-mc/dragonfly/server/world"
 	"github.com/df-mc/dragonfly/server/world/chunk"
 )
@@ -27,10 +28,14 @@ type Biome interface {
 // biomes Is a list of biomes that can be used
 var biomes []Biome
 
+// Noise will be used to generate noise
+var Noise *goperlin.Perlin
+
 // RegisterBiomes Is used to register all the
 // biomes.
-func RegisterBiomes() {
-
+func RegisterBiomes(seed int64) {
+	Noise = goperlin.NewPerlin(2., 2., 3, seed)
+	biomes = append(biomes, plains{})
 }
 
 // Generate Will find the correct biome, and use that to generate

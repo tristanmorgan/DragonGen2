@@ -11,6 +11,7 @@ package gen
 */
 
 import (
+	"DragonGen2/gen/biome"
 	"github.com/df-mc/dragonfly/server/world"
 	"github.com/df-mc/dragonfly/server/world/chunk"
 )
@@ -18,5 +19,5 @@ import (
 // GenerateChunk Finds the correct biome for the chunk, and generates
 // the chunk accordingly.
 func (g Generator) GenerateChunk(pos world.ChunkPos, chunk *chunk.Chunk) {
-
+	biome.Generate(chunk, pos)
 }

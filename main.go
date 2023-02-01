@@ -1,4 +1,4 @@
-package DragonGen2
+package main
 
 import (
 	"DragonGen2/gen"
