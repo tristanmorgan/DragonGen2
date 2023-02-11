@@ -11,7 +11,7 @@ package gen
 */
 
 import (
-	"DragonGen2/gen/biome"
+	"github.com/TacoError/DragonGen2/gen/biome"
 )
 
 // Generator Is the generator struct

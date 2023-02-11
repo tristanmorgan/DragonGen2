@@ -1,4 +1,4 @@
-module DragonGen2
+module github.com/TacoError/DragonGen2
 
 go 1.19
 
