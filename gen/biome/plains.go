@@ -11,7 +11,7 @@ package biome
 */
 
 import (
-	"github.com/TacoError/DragonGen2/gen/perlin"
+	"github.com/tristanmorgan/dragongen/gen/perlin"
 	"github.com/df-mc/dragonfly/server/world"
 	"github.com/df-mc/dragonfly/server/world/chunk"
 )

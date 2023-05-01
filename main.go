@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/TacoError/DragonGen2/gen"
+	"github.com/tristanmorgan/dragongen/gen"
 	"github.com/df-mc/dragonfly/server"
 	"github.com/df-mc/dragonfly/server/player/chat"
 	"github.com/df-mc/dragonfly/server/world"
